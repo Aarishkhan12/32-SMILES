@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Asset/Styling/flexbox2.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- custom css -->
+     <link rel="stylesheet" href="Asset/Styling/flexbox.css">
+    <link rel="stylesheet" href="Asset/Styling/style.css">
+    <!-- cusom css -->
+</head>
+<body>
+
+
+        <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container-fluid px-4">
+            <!-- Brand/Logo -->
+            <a class="navbar-brand" href="index.html">
+                <i class="fas fa-tooth"></i>
+                32Smiles
+            </a>
+
+            <!-- Toggle Button for Mobile -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Navbar Menu -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <!-- Home -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+
+                    <!-- Professional Education Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="profEducationDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-graduation-cap"></i> Professional Education
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="profEducationDropdown">
+                            <li><a class="dropdown-item" href="courses.html"><i class="fas fa-book"></i> Courses</a></li>
+                            <li><a class="dropdown-item" href="helpdoc.html"><i class="fas fa-file-alt"></i> Help Documents</a></li>
+                            <li><a class="dropdown-item" href="#faculty"><i class="fas fa-chalkboard-user"></i> Faculty Resources</a></li>
+                            <li><a class="dropdown-item" href="#s tudents"><i class="fas fa-users"></i> Student Resources</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#case-studies"><i class="fas fa-stethoscope"></i> Case Studies</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Patient Education Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="patEducationDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-user-md"></i> Patient Education
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="patEducationDropdown">
+                            <li><a class="dropdown-item" href="oral-health-tips.html"><i class="fas fa-info-circle"></i> Oral Health Tips</a></li>
+                            <li><a class="dropdown-item" href="common-dental-issue.html"><i class="fas fa-bug"></i> Common Dental Issues</a></li>
+                            <li><a class="dropdown-item" href="#prevention"><i class="fas fa-shield-alt"></i> Prevention Guide</a></li>
+                            <li><a class="dropdown-item" href="#faqs"><i class="fas fa-question-circle"></i> FAQs</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Research Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="researchDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-flask"></i> Research
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="researchDropdown">
+                            <li><a class="dropdown-item" href="#latest-research"><i class="fas fa-newspaper"></i> Latest Research</a></li>
+                            <li><a class="dropdown-item" href="#documents"><i class="fas fa-file-pdf"></i> Documents</a></li>
+                            <li><a class="dropdown-item" href="#media-library"><i class="fas fa-video"></i> Media Library</a></li>
+                            <li><a class="dropdown-item" href="#publications"><i class="fas fa-book-open"></i> Publications</a></li>
+                        </ul>
+                    </li>
+                    
+                    <!-- All Products link -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="all product.html"><i class="fas fa-th-list"></i> All Products</a>
+                    </li>
+
+                    <!-- Products Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="productsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-shopping-bag"></i> Products
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="productsDropdown">
+                            <li><a class="dropdown-item" href="Product-toothpaste.html"><i class="fas fa-tube"></i> Toothpastes</a></li>
+                            <li><a class="dropdown-item" href="brush.html"><i class="fas fa-brush"></i> Brushes</a></li>
+                            <li><a class="dropdown-item" href="products for kids.html"><i class="fas fa-child"></i> Products for Kids</a></li>
+                            <li><a class="dropdown-item" href="electrical asseciors.html"><i class="fas fa-plug"></i> Electrical Accessories</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- About Us -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about"><i class="fas fa-info-circle"></i> About Us</a>
+                    </li>
+
+                    <!-- Sitemap -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#sitemap">
+                            <i class="fas fa-sitemap"></i> Sitemap
+                        </a>
+                    </li>
+
+                    <!-- Contact Us -->
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-contact" href="#contact">
+                            <i class="fas fa-envelope"></i> Contact Us
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Course Section -->
+
+  <section class="info-section">
+    <div class="info-container">
+
+      <div class="info-card">
+        <div class="icon">
+          <img src="Asset/Image/generaldentistry.jpeg">
+        </div>
+        <div class="content">
+          <h3>General Dentistry</h3>
+          <p>We provide complete preventive and routine dental care for patients of all ages. Regular check-ups help detect problems early and maintain long-term oral health.
+
+Our General Dentistry Includes:
+• Detailed oral examination and consultation
+• Digital X-rays for accurate diagnosis
+• Tooth-colored (composite) fillings
+• Gum disease evaluation
+• Preventive dental care plans
+• Oral hygiene education
+
+We recommend visiting every 6 months to maintain healthy teeth and gums.</p>
+        </div>
+      </div>
+
+      <div class="info-card">
+        <div class="icon">
+          <img src="Asset/Image/teethwhiteing.jpeg">
+        </div>
+        <div class="content">
+          <h3>Teeth Whitening</h3>
+          <p>Over time, teeth can become stained due to tea, coffee, smoking, or aging. Our professional whitening treatments safely restore brightness.
+
+Benefits of Professional Whitening:
+• Noticeable results in just 45–60 minutes
+• Safe and enamel-friendly procedure
+• Removes deep stains
+• Boosts confidence instantly
+• Long-lasting results with proper care
+
+Achieve a visibly brighter smile in just one session.</p>
+        </div>
+      </div>
+
+      <div class="info-card">
+        <div class="icon">
+          <img src="Asset/Image/dentalimplants.jpeg">
+        </div>
+        <div class="content">
+          <h3>Dental Implants</h3>
+          <p>Dental implants are a permanent solution for missing teeth. They look, feel, and function like natural
+            teeth.
+
+            Why Choose Dental Implants?
+            • Prevents bone loss teeth.
+
+Why Choose Dental Implants?
+• Prevents bone loss
+• Restores chewing ability
+• Natural appearance
+• Long-lasting (10–20+ years with care)
+• No damage to adjacent teeth
+
+We use advanced implant technology for precision and comfort.</p>
+        </div>
+      </div>
+
+      <div class="info-card">
+         <div class="icon">
+          <img src="Asset/Image/rootcanal.jpeg">
+         </div>
+        <div class="content">
+          <h3>Root Canal Treatment</h3>
+          <p>If a tooth becomes infected or severely decayed, root canal therapy can save it.
+
+Our Root Canal Procedure Includes:
+• Pain-free treatment using modern anesthesia
+• Removal of infected pulp
+• Deep cleaning and disinfection
+• Sealing and restoration with crown if required
+
+This treatment eliminates pain and prevents tooth extraction.</p>
+        </div>
+      </div>
+      <div class="info-card">
+         <div class="icon">
+          <img src="Asset/Image/Smilemakeover.jpeg">
+        </div>
+        <div class="content">
+          <h3>Smile Makeover (Cosmetic Dentistry)</h3>
+          <p>Transform your smile with customized cosmetic treatments designed to improve appearance and symmetry.
+
+Smile Makeover May Include:
+• Porcelain veneers
+• Dental bonding
+• Teeth reshaping
+• Gum contouring
+• Whitening treatments
+
+We design smiles based on facial structure and patient preference.</p>
+        </div>
+      </div>
+
+      <div class="info-card">
+        <div class="icon">
+          <img src="Asset/Image/bracesandaligners.jpeg">
+        </div>
+        <div class="content">
+          <h3>Braces & Clear Aligners (Orthodontics)</h3>
+          <p>Straight teeth are not only attractive but also easier to clean and maintain.
+
+Options Available:
+• Traditional metal braces
+• Ceramic braces
+• Clear aligners (invisible braces)
+
+Treatment duration typically ranges from 6–24 months, depending on case complexity.</p>
+        </div>
+      </div>
+
+      <div class="info-card">
+        <div class="icon">
+          <img src="Asset/Image/pediatricdentistry.jpeg">
+        </div>
+        <div class="content">
+          <h3>Pediatric Dentistry</h3>
+          <p>We provide gentle and friendly dental care for children in a stress-free environment.
+
+Services for Kids Include:
+• Preventive fluoride treatments
+• Dental sealants
+• Cavity treatment
+• Early orthodontic evaluation
+• Oral hygiene guidance
+
+We ensure your child feels comfortable and safe.</p>
+        </div>
+      </div>
+
+      <div class="info-card">
+        <div class="icon">
+          <img src="Asset/Image/crownandbridges.jpeg">
+        </div>
+        <div class="content">
+          <h3>Crowns & Bridges</h3>
+          <p>Restore damaged or missing teeth with durable and aesthetic restorations.
+
+Advantages:
+• Improves chewing function
+• Restores natural appearance
+• Strengthens weak teeth
+• Custom-made for perfect fit
+
+Materials include porcelain, ceramic, and zirconia.</p>
+        </div>
+      </div>
+    </div>
+    <!-- course section end -->
+  </section>
+<!-- Footer  -->
+    <div class="footer ">
+        <div class="container text-center py-3">
+            <p>&copy; 2026 32Smiles. | All rights reserved.</p>
+
+        </div>
+    </div>
+<!-- Footer  -->
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

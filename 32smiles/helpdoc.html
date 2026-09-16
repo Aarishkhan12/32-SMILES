@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Education</title>
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+        <!-- Site-wide styles (includes navbar/footer colors) -->
+        <link rel="stylesheet" href="Asset/Styling/style.css">
+        <!-- Page-specific styles -->
+        <link rel="stylesheet" href="Asset/Styling/helpdoc.css">
+        <!-- Font Awesome for icons -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+
+     <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container-fluid px-4">
+            <!-- Brand/Logo -->
+            <a class="navbar-brand" href="index.html">
+                <i class="fas fa-tooth"></i>
+                32Smiles
+            </a>
+
+            <!-- Toggle Button for Mobile -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Navbar Menu -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <!-- Home -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+
+                    <!-- Professional Education Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="profEducationDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-graduation-cap"></i> Professional Education
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="profEducationDropdown">
+                            <li><a class="dropdown-item" href="courses.html"><i class="fas fa-book"></i> Courses</a></li>
+                            <li><a class="dropdown-item" href="helpdoc.html"><i class="fas fa-file-alt"></i> Help Documents</a></li>
+                            <li><a class="dropdown-item" href="#faculty"><i class="fas fa-chalkboard-user"></i> Faculty Resources</a></li>
+                            <li><a class="dropdown-item" href="#s tudents"><i class="fas fa-users"></i> Student Resources</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#case-studies"><i class="fas fa-stethoscope"></i> Case Studies</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Patient Education Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="patEducationDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-user-md"></i> Patient Education
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="patEducationDropdown">
+                            <li><a class="dropdown-item" href="oral-health-tips.html"><i class="fas fa-info-circle"></i> Oral Health Tips</a></li>
+                            <li><a class="dropdown-item" href="common-dental-issue.html"><i class="fas fa-bug"></i> Common Dental Issues</a></li>
+                            <li><a class="dropdown-item" href="#prevention"><i class="fas fa-shield-alt"></i> Prevention Guide</a></li>
+                            <li><a class="dropdown-item" href="#faqs"><i class="fas fa-question-circle"></i> FAQs</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Research Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="researchDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-flask"></i> Research
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="researchDropdown">
+                            <li><a class="dropdown-item" href="#latest-research"><i class="fas fa-newspaper"></i> Latest Research</a></li>
+                            <li><a class="dropdown-item" href="#documents"><i class="fas fa-file-pdf"></i> Documents</a></li>
+                            <li><a class="dropdown-item" href="#media-library"><i class="fas fa-video"></i> Media Library</a></li>
+                            <li><a class="dropdown-item" href="#publications"><i class="fas fa-book-open"></i> Publications</a></li>
+                        </ul>
+                    </li>
+                    
+                    <!-- All Products link -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="all product.html"><i class="fas fa-th-list"></i> All Products</a>
+                    </li>
+
+                    <!-- Products Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="productsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-shopping-bag"></i> Products
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="productsDropdown">
+                            <li><a class="dropdown-item" href="Product-toothpaste.html"><i class="fas fa-tube"></i> Toothpastes</a></li>
+                            <li><a class="dropdown-item" href="brush.html"><i class="fas fa-brush"></i> Brushes</a></li>
+                            <li><a class="dropdown-item" href="products for kids.html"><i class="fas fa-child"></i> Products for Kids</a></li>
+                            <li><a class="dropdown-item" href="electrical asseciors.html"><i class="fas fa-plug"></i> Electrical Accessories</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- About Us -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about"><i class="fas fa-info-circle"></i> About Us</a>
+                    </li>
+
+                    <!-- Sitemap -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#sitemap">
+                            <i class="fas fa-sitemap"></i> Sitemap
+                        </a>
+                    </li>
+
+                    <!-- Contact Us -->
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-contact" href="#contact">
+                            <i class="fas fa-envelope"></i> Contact Us
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- navbar end -->
+
+
+    <!-- help docs start -->
+    <div class="container-fluid helpdocs">
+        <div class="help-wrapper">
+        <!-- Header -->
+        <header>
+            <h1>Professional Education</h1>
+            <p class="subtitle">Help Document for Students & Practitioners</p>
+        </header>
+
+    <!-- Section 1 -->
+    <section class="card">
+        <h2>1. Introduction to Oral Health Care</h2>
+        <p>Oral health is essential for overall well-being.</p>
+
+        <div class="icon-grid">
+            <div class="icon-box">🛡️<p>Prevent Cavities</p></div>
+            <div class="icon-box">🦷<p>Gum Health</p></div>
+            <div class="icon-box">❤️<p>Overall Health</p></div>
+            <div class="icon-box">😊<p>Quality of Life</p></div>
+        </div>
+        <div>
+            <h3>Introduction to Oral Health Care   </h3>
+            <a class="doc-link" href="1. Introduction to Oral Health Care.docx" target="_blank" rel="noopener">Open "Introduction to Oral Health Care"</a>
+
+        </div>
+    </section>
+
+    <!-- Section 2 -->
+    <section class="card">
+        <h2>2. Basic Tooth Anatomy</h2>
+        <div class="two-column">
+            <div>
+                <ul>
+                    <li>Enamel</li>
+                    <li>Dentin</li>
+                    <li>Pulp</li>
+                    <li>Root</li>
+                </ul>
+            </div>
+            <div class="tooth-placeholder">
+                🦷
+            </div>
+        </div>
+        <div>
+            <h3>Basic Tooth Anatomy   </h3>
+            <a class="doc-link" href="2. Basic Tooth Anatomy.docx" target="_blank" rel="noopener">Open "Basic Tooth Anatomy"</a>
+
+        </div>
+    </section>
+
+    <!-- Section 3 -->
+    <section class="card">
+        <h2>3. Common Oral Diseases</h2>
+        <div class="three-column">
+            <div class="mini-card">
+                <h3>Dental Caries</h3>
+                <p>Tooth Decay</p>
+            </div>
+            <div class="mini-card">
+                <h3>Gingivitis</h3>
+                <p>Gum Inflammation</p>
+            </div>
+            <div class="mini-card">
+                <h3>Periodontitis</h3>
+                <p>Advanced Gum Disease</p>
+            </div>
+        </div>
+        <div>
+            <h3>Common Oral Diseases   </h3>
+            <a class="doc-link" href="3. Common Oral Diseases.docx" target="_blank" rel="noopener">Open "Common Oral Diseases"</a>
+
+        </div>
+    </section>
+
+    <!-- Section 4 -->
+    <section class="card">
+        <h2>4. Clinical Examination Tips</h2>
+        <ul class="checklist">
+            <li>Patient History</li>
+            <li>Oral Examination</li>
+            <li>X-Ray Evaluation</li>
+        </ul>
+        <div>
+            <h3>Clinical Examination Tips   </h3>
+            <a class="doc-link" href="4. Clinical Examination Tips.docx" target="_blank" rel="noopener">Open "Clinical Examination Tips"</a>
+
+        </div>
+    </section>
+
+    <!-- Section 5 -->
+    <section class="card">
+        <h2>5. Infection Control Protocol</h2>
+        <ul class="checklist">
+            <li>Sterilization</li>
+            <li>Protective Gear</li>
+            <li>Hand Hygiene</li>
+        </ul>
+        <div>
+            <h3>Infection Control Protocol   </h3>
+            <a class="doc-link" href="5. Infection Control Protocol.docx" target="_blank" rel="noopener">Open "Infection Control Protocol"</a>
+
+        </div>
+    </section>
+
+    <!-- Section 6 -->
+    <section class="card">
+        <h2>6. Preventive Dentistry</h2>
+        <ul class="checklist">
+            <li>Brushing & Flossing</li>
+            <li>Fluoride Treatments</li>
+            <li>Sealants for Kids</li>
+        </ul>
+    </section>
+
+    </div>
+</div>
+<!-- help docs end -->
+
+<!-- Footer  -->
+    <div class="footer ">
+        <div class="container text-center py-3">
+            <p>&copy; 2026 32Smiles. | All rights reserved.</p>
+
+        </div>
+    </div>
+<!-- Footer  -->
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
